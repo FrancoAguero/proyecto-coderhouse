@@ -1,0 +1,744 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import 'equipo';
+
+/* PALETA DE COLORES */
+$color1: #a0d8ff;
+$color2: #e8fdff;
+$color3: #24252A;
+$color4: #76777c;
+$color5: #e2e2e2;
+/* PALETA DE COLORES */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media only screen and (max-width: 576px){ 
+    body {
+        position: relative;
+    }
+
+    .quantum__icon {
+        width: 35px;
+    }
+    
+    // sin formato BEM por que es una clase de bootstrap
+    .navbar-nav {  
+        margin-left: auto;
+    }
+
+    .navbar__navContacto {
+        color: #a0d8ff !important;
+
+        &:hover {
+            color: rgb(0, 255, 200) !important;
+        }
+    }
+    
+    .navbar__navButton {
+        width: 100px;
+        padding: 9px 25px;
+        background-color: rgba(0, 136, 169, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(0, 136, 169, 0.8);
+        }
+    }
+
+    .main__grid {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(12, 8.3333%) ;
+        grid-template-rows: 70vh 20vh 30.3vh 30.3vh 30.3vh 15vh 100vh 30vh 15vh 150vh 20vh;
+    }
+
+    .overlay {
+        position: absolute;
+        z-index: 1;
+        transition: .5s ease;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+
+    .carousel__container {
+        grid-area: 1 / 1 / 1 / span 12;
+        position: relative;
+
+        .carousel-inner {
+            img {
+                height: 70vh;
+                width: 100%;
+                // object-fit: cover;
+            }
+        }
+
+        .overlay {
+            .container {
+                height: 100%;
+            }
+
+            .row {
+                height: 100%;
+            }
+        }
+    }
+
+    .carousel__icons {
+        width: 150px;
+    }
+
+
+    .services__title {
+        grid-area: 2 / 1 / span 1 / span 12;
+        background-color: #fdfdfd;
+    }
+    
+    .services__name{
+        position: absolute;
+        z-index: 1;
+        transition: .5s ease;
+        color: white;
+        opacity: 1;
+    }
+    
+    .services__item1 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: 3 / 1 / span 1 / span 12;
+
+        img {
+            height: 30.3vh;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            opacity: 0;
+        }
+
+        &:hover {
+            .overlay {
+                opacity: 1;
+            }
+
+            .services__name {
+                opacity: 0;
+            }
+        }
+    }
+
+    .services__item2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: 4 / 1 / span 1 / span 12;
+        
+        img {
+            height: 30.3vh;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            opacity: 0;
+        }
+
+        &:hover {
+            .overlay {
+                opacity: 1;
+            }
+
+            .services__name {
+                opacity: 0;
+            }
+        }
+    }
+
+    .services__item3 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: 5 / 1 / span 1 / span 12;
+        
+        img {
+            height: 30.3vh;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            opacity: 0;
+        }
+
+        &:hover {
+            .overlay {
+                opacity: 1;
+            }
+
+            .services__name {
+                opacity: 0;
+            }
+        }
+    }
+
+    .portfolio__title {
+        grid-area: 6 / 1 / span 1 / span 12;
+        background-color: #fdfdfd;
+    }
+
+    .portfolio__container {
+        grid-area: 7 / 1 / span 1 / span 12;
+    }
+
+    .portfolio__card {
+        position: relative;
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+
+    .companies__container {
+        grid-area: 8 / 1 / span 1 / span 12;
+        background-color: $color3;
+        color: white;
+    }
+
+    .contact__title {
+        grid-area: 9 / 1 / span 1 / span 12;
+        background-color: #fdfdfd;
+    }
+
+    .contact__container {
+        grid-area: 10 / 1 / span 1 / span 12;
+    }
+
+    .contact__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90%;
+    }
+    
+    .contact__text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .team__img {
+        height: 60vh;
+        width: 100%;
+    }
+
+    .footer {
+        grid-area: 11 / 1 / span 1 / span 12;
+        background: $color3;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) { 
+    body {
+        position: relative;
+    }
+
+    .quantum__icon {
+        width: 35px;
+    }
+    
+    // sin formato BEM por que es una clase de bootstrap
+    .navbar-nav {  
+        margin-left: auto;
+    }
+
+    .navbar__navContacto {
+        color: #a0d8ff !important;
+
+        &:hover {
+            color: rgb(0, 255, 200) !important;
+        }
+    }
+    
+    .navbar__navButton {
+        width: 100px;
+        padding: 9px 25px;
+        background-color: rgba(0, 136, 169, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(0, 136, 169, 0.8);
+        }
+    }
+
+    .main__grid {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(12, 8.3333%) ;
+        grid-template-rows: 70vh 20vh 30.3vh 30.3vh 30.3vh 15vh 100vh 30vh 15vh 150vh 20vh;
+    }
+
+    .overlay {
+        position: absolute;
+        z-index: 1;
+        transition: .5s ease;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+
+    .carousel__container {
+        grid-area: 1 / 1 / 1 / span 12;
+        position: relative;
+
+        .carousel-inner {
+            img {
+                height: 70vh;
+                object-fit: cover;
+            }
+        }
+
+        .overlay {
+            .container {
+                height: 100%;
+            }
+
+            .row {
+                height: 100%;
+            }
+        }
+    }
+
+    .carousel__icons {
+        width: 150px;
+    }
+
+
+    .services__title {
+        grid-area: 2 / 1 / span 1 / span 12;
+        background-color: #fdfdfd;
+    }
+    
+    .services__name{
+        position: absolute;
+        z-index: 1;
+        transition: .5s ease;
+        color: white;
+        opacity: 1;
+    }
+    
+    .services__item1 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: 3 / 1 / span 1 / span 12;
+
+        img {
+            height: 30.3vh;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            opacity: 0;
+        }
+
+        &:hover {
+            .overlay {
+                opacity: 1;
+            }
+
+            .services__name {
+                opacity: 0;
+            }
+        }
+    }
+
+    .services__item2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: 4 / 1 / span 1 / span 12;
+        
+        img {
+            height: 30.3vh;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            opacity: 0;
+        }
+
+        &:hover {
+            .overlay {
+                opacity: 1;
+            }
+
+            .services__name {
+                opacity: 0;
+            }
+        }
+    }
+
+    .services__item3 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: 5 / 1 / span 1 / span 12;
+        
+        img {
+            height: 30.3vh;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            opacity: 0;
+        }
+
+        &:hover {
+            .overlay {
+                opacity: 1;
+            }
+
+            .services__name {
+                opacity: 0;
+            }
+        }
+    }
+
+    .portfolio__title {
+        grid-area: 6 / 1 / span 1 / span 12;
+        background-color: #fdfdfd;
+    }
+
+    .portfolio__container {
+        grid-area: 7 / 1 / span 1 / span 12;
+    }
+
+    .portfolio__card {
+        position: relative;
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+
+    .companies__container {
+        grid-area: 8 / 1 / span 1 / span 12;
+        background-color: $color3;
+        color: white;
+    }
+
+    .contact__title {
+        grid-area: 9 / 1 / span 1 / span 12;
+        background-color: #fdfdfd;
+    }
+
+    .contact__container {
+        grid-area: 10 / 1 / span 1 / span 12;
+    }
+
+    .contact__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90%;
+    }
+    
+    .contact__text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .team__img {
+        height: 60vh;
+        width: 100%;
+    }
+
+    .footer {
+        grid-area: 11 / 1 / span 1 / span 12;
+        background: $color3;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 993px) { 
+    body {
+        position: relative;
+    }
+
+    .quantum__icon {
+        width: 35px;
+    }
+    
+    // sin formato BEM por que es una clase de bootstrap
+    .navbar-nav {  
+        margin-left: auto;
+    }
+
+    .navbar__navContacto {
+        color: #a0d8ff !important;
+
+        &:hover {
+            color: rgb(0, 255, 200) !important;
+        }
+    }
+    
+    .navbar__navButton {
+        width: 100px;
+        padding: 9px 25px;
+        background-color: rgba(0, 136, 169, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(0, 136, 169, 0.8);
+        }
+    }
+
+    .main__grid {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(12, 8.3333%) ;
+        grid-template-rows: 70vh 20vh 90.9vh 15vh 180vh 30vh 20vh 70vh 10vh;
+    }
+
+    .overlay {
+        position: absolute;
+        z-index: 1;
+        transition: .5s ease;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+
+    .carousel__container {
+        grid-area: 1 / 1 / 1 / span 12;
+        position: relative;
+
+        .carousel-inner {
+            img {
+                height: 70vh;
+                object-fit: cover;
+            }
+        }
+
+        .overlay {
+            .container {
+                height: 100%;
+            }
+
+            .row {
+                height: 100%;
+            }
+        }
+    }
+
+    .carousel__icons {
+        width: 150px;
+    }
+
+
+    .services__title {
+        grid-area: 2 / 1 / span 1 / span 12;
+        background-color: #fdfdfd;
+    }
+    
+    .services__name{
+        position: absolute;
+        z-index: 1;
+        transition: .5s ease;
+        color: white;
+        opacity: 1;
+    }
+    
+    .services__item1 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: 3 / 1 / span 1 / span 4;
+
+        img {
+            height: 90.9vh;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            opacity: 0;
+        }
+
+        &:hover {
+            .overlay {
+                opacity: 1;
+            }
+
+            .services__name {
+                opacity: 0;
+            }
+        }
+    }
+
+    .services__item2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: 3 / 5 / span 1 / span 4;
+        
+        img {
+            height: 90.9vh;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            opacity: 0;
+        }
+
+        &:hover {
+            .overlay {
+                opacity: 1;
+            }
+
+            .services__name {
+                opacity: 0;
+            }
+        }
+    }
+
+    .services__item3 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: 3 / 9 / span 1 / span 4;
+        
+        img {
+            height: 90.9vh;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            opacity: 0;
+        }
+
+        &:hover {
+            .overlay {
+                opacity: 1;
+            }
+
+            .services__name {
+                opacity: 0;
+            }
+        }
+    }
+
+    .portfolio__title {
+        grid-area: 4 / 1 / span 1 / span 12;
+        background-color: #fdfdfd;
+    }
+
+    .portfolio__container {
+        grid-area: 5 / 1 / span 1 / span 12;
+    }
+
+    .portfolio__card {
+        position: relative;
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+
+    .companies__container {
+        grid-area: 6 / 1 / span 1 / span 12;
+        background-color: $color3;
+        color: white;
+    }
+
+    .contact__title {
+        grid-area: 7 / 1 / span 1 / span 12;
+        background-color: #fdfdfd;
+    }
+
+    .contact__container {
+        grid-area: 8 / 1 / span 1 / span 12;
+    }
+
+    .contact__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90%;
+    }
+    
+    .contact__text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .team__img {
+        height: 60vh;
+        width: 100%;
+    }
+
+    .footer {
+        grid-area: 9 / 1 / span 1 / span 12;
+        background: $color3;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+

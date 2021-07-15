@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta 
+    name="description" 
+    content="Es una empresa de desarrollo de aplicaciones móviles, software y de marketing digital.
+        con oficinas en Córdoba, Argentina, ofrecemos desarrollo de software personalizado, desarrollo de aplicaciones, 
+        diseño UX / UI, desarrollo web y servicios digitales para empresas emergentes y emprendedores.
+        Lo llevamos desde el concepto y el diseño iniciales hasta el desarrollo y la entrega de un producto final que deleitará a sus clientes."
+    >
+    <meta name="keywords" content="Web, desarrollo, react, html, css, mi pagina, ui, ux, ui/ux">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/icons/quantum-computing.svg">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Quantum Soft | Empresa de Desarrollo de software</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="1000px">
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img class="quantum__icon" src="./img/icons/quantum-computing.svg" alt="...">
+                QuantumSoft
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carousel">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Website</a></li>
+                            <li><a class="dropdown-item" href="#">Diseño UX/UI</a></li>
+                            <li><a class="dropdown-item" href="#">Desarrollo de software</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Templates/Equipo.html">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar__navContacto" href="#contact">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- /NavBar -->
+    
+    <div class='main__grid'>
+        <!-- Presentacion -->
+        <div id="carousel" class="carousel__container carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="./img/index/imagen de prueba 1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="./img/index/imagen de prueba 2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="./img/index/imagen de prueba 3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="overlay">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 offset-3 text-center text-md-center">
+                                <h1>Quantum Soft</h1>
+                                <p class="d-none d-md-block">
+                                    Es una empresa de desarrollo de aplicaciones móviles, software y de marketing digital.
+                                    con oficinas en Córdoba, Argentina, ofrecemos desarrollo de software personalizado, desarrollo de aplicaciones, 
+                                    diseño UX / UI, desarrollo web y servicios digitales para empresas emergentes y emprendedores.
+                                    Lo llevamos desde el concepto y el diseño iniciales hasta el desarrollo y la entrega de un producto final que deleitará a sus clientes.
+                                </p>
+                                <button class='btn btn-outline-info col-3'>TEST</button>
+                                <button class='btn btn-outline-info col-3' >TEST</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Presentacion -->
+
+        <!-- Servicios -->
+        <div id="services" class="services__title">
+            <div class="container">
+                <div class="text-center mt-3">
+                    <small>Nuestros</small>
+                    <h2>Servicios</h2>
+                </div>
+            </div>
+        </div>
+        <div class="services__item1">
+            <h3 class="services__name">WEBSITE</h3>
+            <img src="./img/Services/header.jpg" alt="">
+            <div class="overlay">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center justify-content-center text-center">
+                        <h3>WEBSITE</h3>
+                        <p class="col-12">
+                            Ofrecemos diseño y desarrollo de sitios web para mejorar su presencia en Internet. 
+                        </p>
+                        <button class="btn btn-primary col-6">Ver mas</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services__item2">
+            <h3 class="services__name">DISEÑO UX/UI</h3>
+            <img src="./img/Services/header (1).jpg" alt="">
+            <div class="overlay">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center justify-content-center text-center">
+                        <h3>DISEÑO UX/UI</h3>
+                        <p class="col-12">
+                            Domina los conceptos básicos de la representación visual. 
+                        </p>
+                        <button class="btn btn-primary col-6">Ver mas</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services__item3">
+            <h3 class="services__name">DESARROLLO DE SOFTWARE</h3>
+            <img src="./img/Services/header (2).jpg" alt="">
+            <div class="overlay">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center justify-content-center text-center">
+                        <h3>SOFTWARE DEVELOPMENT</h3>
+                        <p class="col-12">
+                            Convierta la transformación digital en oportunidades para su negocio.
+                        </p>
+                        <button class="btn btn-primary col-6">Ver mas</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Servicios -->
+
+        <!-- Portfolio -->
+        <div id="portfolio" class="portfolio__title">
+            <div class="container">
+                <div class="text-center mt-3">
+                    <small>Nuestro</small>
+                    <h2>Portfolio</h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="portfolio__container">
+            <div class="container">
+                <div class="row">
+                    <div class="portfolio__card col-4 mt-5" data-aos="fade-right" data-aos-once="true">
+                        <img src="./img/porfolio/portfolio_1.jpg" class="shadow-lg" alt="...">
+                    </div>
+                    <div class="portfolio__card col-4 mt-5" data-aos="zoom-in" data-aos-once="true">
+                        <img src="./img/porfolio/portfolio_2.jpg" class="shadow-lg" alt="...">
+                    </div>
+                    <div class="portfolio__card col-4 mt-5" data-aos="fade-left" data-aos-once="true">
+                        <img src="./img/porfolio/portfolio_3.jpg" class="shadow-lg" alt="...">
+                    </div>
+                    <div class="portfolio__card col-4 mt-5" data-aos="fade-right" data-aos-once="true">
+                        <img src="./img/porfolio/portfolio_4.jpg" class="shadow-lg" alt="...">
+                    </div>
+                    <div class="portfolio__card col-4 mt-5" data-aos="zoom-in" data-aos-once="true">
+                        <img src="./img/porfolio/portfolio_5.png" class="shadow-lg" alt="...">
+                    </div>
+                    <div class="portfolio__card col-4 mt-5" data-aos="fade-left" data-aos-once="true">
+                        <img src="./img/porfolio/portfolio_6.jpg" class="shadow-lg" alt="...">
+                    </div>
+                    <div class="portfolio__card col-4 mt-5" data-aos="fade-right" data-aos-once="true">
+                        <img src="./img/porfolio/portfolio_7.jpg" class="shadow-lg" alt="...">
+                    </div>
+                    <div class="portfolio__card col-4 mt-5" data-aos="zoom-in" data-aos-once="true">
+                        <img src="./img/porfolio/portfolio_8.jpg" class="shadow-lg" alt="...">
+                    </div>
+                    <div class="portfolio__card col-4 mt-5" data-aos="fade-left" data-aos-once="true">
+                        <img src="./img/porfolio/portfolio_9.jpg" class="shadow-lg" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Portfolio -->
+
+        <!-- Companies -->
+        <div id="companies" class="companies__container">
+            <div class="container">
+                <div class="row align-content-center pt-4">
+                    <div class="col-12">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="3000">
+                                    <div class="row">
+                                        <img src="./img/icons/Icon-coca-cola.svg" class="d-block carousel__icons" alt="">
+                                        <img src="./img/icons/Icon-sprite.svg" class="d-block carousel__icons" alt="">
+                                        <img src="./img/icons/Icon-burger-king.svg" class="d-none d-sm-block carousel__icons" alt="">
+                                        <img src="./img/icons/Icon-nike.svg" class="d-none d-sm-block carousel__icons" alt="">
+                                        <img src="./img/icons/Icon-disney.svg" class="d-none d-md-block carousel__icons" alt="">
+                                        <img src="./img/icons/Icon-netflix.svg" class="d-none d-lg-block carousel__icons" alt="">
+                                        <img src="./img/icons/Icon-mtv.svg" class="d-none d-xl-block carousel__icons" alt="">
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <div class="row">
+                                        <img src="./img/icons/Icon-2k.svg" class="d-block carousel__icons" alt="...">
+                                        <img src="./img/icons/Icon-mcdonalds.svg" class="d-block carousel__icons" alt="...">
+                                        <img src="./img/icons/Icon-ubisoft.svg" class="d-none d-sm-none d-md-block carousel__icons" alt="...">
+                                        <img src="./img/icons/Icon-santander.svg" class="d-none d-sm-block d-md-block d-lg-block carousel__icons" alt="...">
+                                        <img src="./img/icons/Icon-google.svg" class="d-none d-md-block d-lg-block carousel__icons" alt="...">
+                                        <img src="./img/icons/Icon-samsung.svg" class="d-none d-md-block d-lg-block carousel__icons" alt="...">
+                                        <img src="./img/icons/Icon-microsoft.svg" class="d-none d-md-block d-lg-block carousel__icons" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- /Companies -->
+
+        <!-- Contacto -->
+        <div id="contact" class="contact__title">
+            <div class="container">
+                <div class="text-center mt-3">
+                    <h2>Contacto</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact__container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="container-fluid">
+                            <form class="row justify-content-center">
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="Nombre">
+                                </div>
+                                <div class="col-6">
+                                    <input type="email" class="form-control" placeholder="Quantum.soft@gmail.com">
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <input type="text" class="form-control" placeholder="Asunto">
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <textarea class="form-control" rows="11" placeholder="Mensaje"></textarea>
+                                </div>
+                                <button class="btn btn-info col-4 mt-3"> Enviar </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2">
+                            <div class="contact__info">
+                                <div class="contact__text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <circle cx="12" cy="11" r="3" />
+                                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                                    </svg>
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="contact__text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                                        <polyline points="3 7 12 13 21 7" />
+                                    </svg>
+                                    <p> Quantum.soft@gmail.com </p>
+                                </div>
+                                <div class="contact__text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                                    </svg>
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4815.088788612378!2d-64.18767989549177!3d-31.420133642615742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1624403770367!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Contacto -->
+    
+        <!-- footer -->
+        <footer class='footer pb-4 pt-4'>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 col-lg">
+                        <a href="#">Preguntas frecuentes</a>
+                    </div>
+                    <div class="col-12 col-lg">
+                        <a href="#">Contactanos</a>
+                    </div>
+                    <div class="col-12 col-lg">
+                        <a href="#">Terminos y condiciones</a>
+                    </div>
+                    <div class="col-12 col-lg">
+                        <a href="#">Privacidad</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
