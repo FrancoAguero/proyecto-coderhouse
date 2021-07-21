@@ -1,0 +1,15 @@
+.website__img {
+    position: relative;
+
+    img {
+        height: 300px;
+        object-fit: cover;
+        width: 100%;
+    }
+    
+    .overlay {
+        p {
+            font-size: 2.5rem;
+        }
+    }
+}

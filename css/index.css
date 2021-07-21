@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-@media only screen and (min-width: 993px) {
-  .equipo__grid {
-    background-color: aqua; } }
+.website__img {
+  position: relative; }
+  .website__img img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%; }
+  .website__img .overlay p {
+    font-size: 2.5rem; }
 
 /* PALETA DE COLORES */
 /* PALETA DE COLORES */
@@ -34,7 +39,7 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(12, 8.3333%);
-    grid-template-rows: 70vh 20vh 30.3vh 30.3vh 30.3vh 15vh 100vh 30vh 15vh 150vh 20vh; }
+    grid-template-rows: 70vh 15vh 30.3vh 30.3vh 30.3vh 10vh auto 25vh 10vh auto 20vh; }
   .overlay {
     position: absolute;
     z-index: 1;
@@ -45,12 +50,16 @@
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
     color: white; }
+    .overlay a {
+      text-decoration: none;
+      color: white; }
   .carousel__container {
     grid-area: 1 / 1 / 1 / span 12;
     position: relative; }
     .carousel__container .carousel-inner img {
       height: 70vh;
-      width: 100%; }
+      width: 100%;
+      object-fit: cover; }
     .carousel__container .overlay .container {
       height: 100%; }
     .carousel__container .overlay .row {
@@ -141,7 +150,7 @@
     height: 90%; }
   .contact__text {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center; }
   .team__img {
     height: 60vh;
@@ -177,7 +186,7 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(12, 8.3333%);
-    grid-template-rows: 70vh 20vh 30.3vh 30.3vh 30.3vh 15vh 100vh 30vh 15vh 150vh 20vh; }
+    grid-template-rows: 70vh 15vh 30.3vh 30.3vh 30.3vh 10vh auto 25vh 10vh auto 20vh; }
   .overlay {
     position: absolute;
     z-index: 1;
@@ -188,6 +197,9 @@
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
     color: white; }
+    .overlay a {
+      text-decoration: none;
+      color: white; }
   .carousel__container {
     grid-area: 1 / 1 / 1 / span 12;
     position: relative; }
@@ -279,7 +291,7 @@
     grid-area: 10 / 1 / span 1 / span 12; }
   .contact__info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     height: 90%; }
   .contact__text {
@@ -320,7 +332,7 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(12, 8.3333%);
-    grid-template-rows: 70vh 20vh 90.9vh 15vh 180vh 30vh 20vh 70vh 10vh; }
+    grid-template-rows: 70vh 20vh 90.9vh 15vh auto 30vh 15vh auto 15vh; }
   .overlay {
     position: absolute;
     z-index: 1;
@@ -331,6 +343,9 @@
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
     color: white; }
+    .overlay a {
+      text-decoration: none;
+      color: white; }
   .carousel__container {
     grid-area: 1 / 1 / 1 / span 12;
     position: relative; }
@@ -427,11 +442,13 @@
     height: 90%; }
   .contact__text {
     display: flex;
-    flex-direction: row;
-    align-items: center; }
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem; }
   .team__img {
     height: 60vh;
-    width: 100%; }
+    width: 100%;
+    object-fit: cover; }
   .footer {
     grid-area: 9 / 1 / span 1 / span 12;
     background: #24252A; }
