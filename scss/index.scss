@@ -222,6 +222,9 @@ $color5: #e2e2e2;
         grid-area: 8 / 1 / span 1 / span 12;
         background-color: $color3;
         color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .contact__title {
@@ -469,6 +472,9 @@ $color5: #e2e2e2;
         grid-area: 8 / 1 / span 1 / span 12;
         background-color: $color3;
         color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .contact__title {
@@ -549,7 +555,7 @@ $color5: #e2e2e2;
         position: relative;
         display: grid;
         grid-template-columns: repeat(12, 8.3333%) ;
-        grid-template-rows: 70vh 20vh 90.9vh 15vh auto 30vh 15vh auto 15vh;
+        grid-template-rows: 70vh 15vh 90.9vh 10vh auto 25vh 15vh auto 10vh;
     }
 
     .overlay {
@@ -716,6 +722,9 @@ $color5: #e2e2e2;
         grid-area: 6 / 1 / span 1 / span 12;
         background-color: $color3;
         color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .contact__title {
